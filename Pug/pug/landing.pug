@@ -1,0 +1,19 @@
+extend pug/plantilla.pug
+block contenido
+  section.intro
+    .intro__imagen: img(src="images/imagen.png")
+    .intro__contenido
+      h2 #{titulos[0]}
+      p
+        | Lorem ipsum dolor sit amet,
+        | consectetur adipiscing elit. 
+        | Proin ex mi, gravida sit amet imperdiet vel, 
+        | sodales a mi. Proin sit amet tellus nec nisl bibendum ornare nec at augue. 
+        | Integer semper feugiat varius.
+        span
+          | Proin sed urna orci interdum rutrum. 
+          | Integer rhoncus finibus nunc, ac porttitor ex dapibud ac.
+      a.boton(href="#") Leer mas
+  main.contenido
+    each title in titulos
+      +box('imagen.png', title, contenido)

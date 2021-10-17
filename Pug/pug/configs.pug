@@ -1,0 +1,13 @@
+-var titulo = "Titulo Principal"
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var user = "Babi"
+-var contenido = 'Lorem ipsum dolor sit amet consecteur adipiscing elit'
+-var links=['Acerca', 'Noticias', 'Contacto']
+
+mixin box (imagen, titulo, contenido)
+  .caja
+    .caja__imagen: img(src="images/"+imagen)
+    .caja__contenido
+      h3 #{titulo}
+      p #{contenido}
+      a.boton Leer mas
