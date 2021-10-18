@@ -1,0 +1,27 @@
+.articulos {
+ width: 40%;
+ margin-top: 50px;
+ padding: 50px 0 0 50px;
+}
+
+.articulo {
+  margin-bottom: 75px;
+  border-bottom: 3px solid $color-purple;
+
+  &__categoria {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-purple;
+    @include titles($fuente-oswald);
+  }
+
+  &__titulo {
+    font-size: 20px;
+    @include titles($fuente-oswald);
+  }
+
+  &__descripcion {
+    margin-bottom: 30px;
+    padding-right: 100px;
+  }
+}

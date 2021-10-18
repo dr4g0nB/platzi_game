@@ -1,0 +1,31 @@
+.galeria {
+  width: 50%;
+  height: 250px;
+  margin: 60px auto;
+  padding: 20px 0 0 30px;
+  justify-content: space-evenly;
+  @include box;
+
+  &__foto-principal {
+    float: left;
+    margin-right: 10px; 
+  }
+
+  &__fotos-adicionales {
+    height: 70px;
+    margin: 5px 0;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    @include titles($fuente-oswald);
+  }
+
+  img {
+    border-radius: 10px;
+    align-items: center;
+  }
+}

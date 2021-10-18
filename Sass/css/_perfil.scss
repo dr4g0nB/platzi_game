@@ -1,0 +1,55 @@
+.perfil {
+	width: 50%;
+	padding-top: 50px;
+	color: $color-white;
+	background-color: $color-purple;
+	@include titles($fuente-oswald);
+
+	&__avatar {
+		display: block;
+		margin: 0 auto;
+		border-radius: 50em;
+	}
+	
+	&__nombre {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	&__titulo {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 700;
+		font-size: 12px;
+		color: get-opacity($color-white, .50);
+	}
+
+	&__boton {
+		display: block;
+		width: 100px;
+		height: 40px;
+		margin: 15px auto;
+		padding-top: 7px;
+		border-radius: 20px;
+		text-decoration: none;
+		text-align: center;
+		@include titles($fuente-oswald);
+		color: $color-white;
+		background-color: get-opacity($color-black, .20);
+		border: 2px solid get-opacity($color-white, .30);
+	}
+}
+
+.perfil__minibio {
+	margin: 0 auto;
+	padding: 40px 0 18px;
+
+	h2 {
+		@extend .perfil__nombre;
+	}
+
+	h3 {
+		@extend .perfil__titulo;
+	}
+}
